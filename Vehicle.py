@@ -35,6 +35,11 @@ class Vehicle:
         
         self.__vergiUcreti = int(self.__aracYasi) * int(self.__motorHacmi)              
 
+        #Kullanicidan Yil-Ay-Gun seklinde bir input aliyoruz (1 bosluk birakarak) 
+        #Eger istenen formatta girilmezse sonsuz bir donguye sokuyoruz dogru bir format girildiginde;
+        # String methodlarından olan strip methoduyla yil ay gun degiskenlerine bu degerleri atıyoruz
+        # Pythonun date modulunu kullanarak muayene tarihine bunu atiyoruz.
+        
         self.tarih = input("Muayene tarihini Yil-Ay-Gun seklinde 1 bosluk birakarak giriniz : ").strip()
         while (len(self.tarih) != 10) or (self.whiteSpaceCount(self.tarih) != 2):
             print("Lutfen istenen formatta giris yapiniz!")
