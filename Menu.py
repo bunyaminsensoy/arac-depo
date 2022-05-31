@@ -76,3 +76,8 @@ class Menu:
 
         df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' \nArac Modeli ', '\n Benzin Turu ', '\n Muayene Tarihi ', '\n Arac yasi ', '\n Motor hacmi ', ])
         print(df.to_string())
+
+    def objectToList(self):
+        for i in self.vehicleList.keys():
+            temp = self.vehicleList.get(i)
+            self.printRecord.append(temp.returnPropertiesList())
