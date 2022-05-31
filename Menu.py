@@ -48,3 +48,18 @@ class Menu:
             if i == plaka:
                 return True, self.vehicleList.get(i)
         return False, None
+    
+    
+     def getVehicle(self):
+        cycleControl = True
+        while cycleControl:
+            plaka = input("Aracinizin plakasini giriniz: ").strip().upper()
+            control, record = self.searchRecord(plaka)
+            if plaka == '-1':
+                break
+            elif control:
+                print(record)
+                cycleControl = False
+            else:
+                print("\nBu plakayla ilgili bir kayit bulunamadi.!\n")
+                print("Menuye donmek icin : -1")
