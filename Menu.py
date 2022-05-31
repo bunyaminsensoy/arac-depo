@@ -57,6 +57,9 @@ class Menu:
                 return True, self.vehicleList.get(i)
         return False, None
     
+    #Sistemde girilen araclari aramaya yonelik bir fonksiyon
+    #Bu fonksiyon girilen plakanin sistemde varolup olmadigini tespit edip;
+    # Eger varsa arac bilgilerini ekrana yazdiran yoksa bilgilendirme mesaji ekrana yazdiran bir fonksiyon yazdim
     
     def getVehicle(self):
         cycleControl = True
