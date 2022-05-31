@@ -41,3 +41,10 @@ class Menu:
             print("\n"+plaka+" plakali arac sisteme kaydedildi.", end='\n')
         else:
             print("\n"+plaka+" plakali arac sistemde zaten kayitli!", end='\n')
+   
+   
+    def searchRecord(self, plaka):
+        for i in self.vehicleList.keys():
+            if i == plaka:
+                return True, self.vehicleList.get(i)
+        return False, None
