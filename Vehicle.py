@@ -68,7 +68,10 @@ class Vehicle:
         returnList.append(self.aracYasi)
         returnList.append(self.motorHacmi)
         return returnList
-
+    
+       #Pythonun default methodlarindan olan str methodunu obje olusturdugumda aracin bilgilerini ekrana yazabilmek ve anlik
+    #bilgi alabilmek icin kullandim
+    
     def __str__(self):
         print()
         suankiTarih = date.today()
