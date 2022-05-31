@@ -60,3 +60,13 @@ class Vehicle:
         + "\nArac yasi : "+self.aracYasi + "\nMotor hacmi : "+self.motorHacmi + "\nVergi ucreti : "+str(self.vergiUcreti) \
               + "\nMuayene tarihi : " +str(self.muayeneTarihi) +"\nMuayene gunune : " + str(self.muayeneTarihi-suankiTarih) + " var"
 
+   
+   #-------------------------------------- GETTER SETTER Methods----------------------------------------------#
+
+    @property
+    def plaka(self):
+        return self.__plaka
+
+    @plaka.setter
+    def plaka(self, value):
+        self.__plaka = value
