@@ -36,7 +36,9 @@ class Vehicle:
             self.tarih = input("Muayene tarihi giriniz: ").strip()
         yil, ay, gun = self.tarih.split()
         self.muayeneTarihi = date(int(yil), int(ay), int(gun))
-
+      
+    # Constructorda tarih inputu alirken inputtaki bosluk karakterlerinin sayisini hesaplayan fonksiyon
+    
     def whiteSpaceCount(self, string):
         count = 0
         for a in string:
