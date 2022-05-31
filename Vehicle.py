@@ -1,1 +1,1 @@
-print("yeni kod satırları")
+print()
