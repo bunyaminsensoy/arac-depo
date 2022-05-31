@@ -57,6 +57,9 @@ class Menu:
                 return True, self.vehicleList.get(i)
         return False, None
     
+    #Sistemde girilen araclari aramaya yonelik bir fonksiyon
+    #Bu fonksiyon girilen plakanin sistemde varolup olmadigini tespit edip;
+    # Eger varsa arac bilgilerini ekrana yazdiran yoksa bilgilendirme mesaji ekrana yazdiran bir fonksiyon yazdim
     
     def getVehicle(self):
         cycleControl = True
@@ -72,6 +75,8 @@ class Menu:
                 print("\nBu plakayla ilgili bir kayit bulunamadi.!\n")
                 print("Menuye donmek icin : -1")
     
+    # Girilen plakanin sistemde kayitli olup olmadigini sorgulayan fonksiyon
+    # Return olarak boolean bir ifade dondurur.
     
     def kayitliMi(self, plaka):
         if plaka in self.vehicleList.keys():
