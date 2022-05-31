@@ -12,7 +12,7 @@ class Menu:
         print("Kayit eklemek icin :1\n""Kayit okumak icin :2\n"
               "Arac bilgilerini gormek icin :3\n" "Programi sonlandirmak icin :4\n")
 
-        while( cycle ):     
+        while( cycle ):      # Degisken kontrollu bir dongu yaptim. Cikmak istedigim zaman bu degiskeni false yapip donguyu sonlandiriyorum
             try:
                 choose = input("Lutfen yapmak istediginiz islemi secin: ").strip()
                 while not(choose.isnumeric()):
