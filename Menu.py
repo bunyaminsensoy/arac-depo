@@ -63,3 +63,9 @@ class Menu:
             else:
                 print("\nBu plakayla ilgili bir kayit bulunamadi.!\n")
                 print("Menuye donmek icin : -1")
+    
+    
+    def kayitliMi(self, plaka):
+        if plaka in self.vehicleList.keys():
+            return False
+        return True
