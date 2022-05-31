@@ -73,3 +73,6 @@ class Menu:
     def readRecords(self):
         print()
         self.objectToList()
+
+        df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' \nArac Modeli ', '\n Benzin Turu ', '\n Muayene Tarihi ', '\n Arac yasi ', '\n Motor hacmi ', ])
+        print(df.to_string())
