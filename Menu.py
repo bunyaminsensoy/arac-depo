@@ -86,8 +86,8 @@ class Menu:
 # Girilen tum kayitlari pandas kutuphanesiyle ekrana yazdiriyorum
     def readRecords(self):
         print()
-        self.objectToList()
-
+        self.objectToList()  # Fonksiyon hakkindaki gerekli aciklamalari yaptim
+ # Pandas modulunun dataFrame methoduyla sisteme girilen araclarin listelenmesi ve kategorize edilmesini sagladim
         df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' \nArac Modeli ', '\n Benzin Turu ', '\n Muayene Tarihi ', '\n Arac yasi ', '\n Motor hacmi ', ])
         print(df.to_string())
 
