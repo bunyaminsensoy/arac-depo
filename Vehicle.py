@@ -42,3 +42,13 @@ class Vehicle:
             if a.isspace():
                 count += 1
         return count
+
+    def returnPropertiesList(self):
+        returnList = []
+        returnList.append(self.plaka)
+        returnList.append(self.aracModeli)
+        returnList.append(self.fuelType)
+        returnList.append(self.muayeneTarihi)
+        returnList.append(self.aracYasi)
+        returnList.append(self.motorHacmi)
+        return returnList
