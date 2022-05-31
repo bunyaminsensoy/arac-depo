@@ -29,3 +29,15 @@ class Menu:
                 print("Programdan cikiliyor..")
                 cycle = False
             print()
+
+    def addRecord(self):
+        plaka = input("Aracin plakasini giriniz: ").strip().upper()
+        while not (plaka.isalnum()):
+            print("Plaka sadece harf ve sayilardan olusabilir!!")
+            plaka = input("Gecerli bir plaka giriniz: ").strip().upper()
+        arac = Vehicle(plaka)
+        if self.kayitliMi(plaka):
+            self.vehicleList[plaka] = arac
+            print("\n"+plaka+" plakali arac sisteme kaydedildi.", end='\n')
+        else:
+            print("\n"+plaka+" plakali arac sistemde zaten kayitli!", end='\n')
