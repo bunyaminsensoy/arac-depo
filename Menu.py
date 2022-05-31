@@ -48,6 +48,7 @@ class Menu:
             print("\n"+plaka+" plakali arac sisteme kaydedildi.", end='\n')
         else:
             print("\n"+plaka+" plakali arac sistemde zaten kayitli!", end='\n')
+            
     # Girilen plakayi dic'te ariyorum varsa geriye False ve none tupple'i donduruyorum
     # Yoksa plakanin eklenebilir oldugunu soyluyorum ve geriye dict'i gonderiyorum
    
@@ -84,10 +85,12 @@ class Menu:
         return True
 
 # Girilen tum kayitlari pandas kutuphanesiyle ekrana yazdiriyorum
+
     def readRecords(self):
         print()
         self.objectToList()  # Fonksiyon hakkindaki gerekli aciklamalari yaptim
  # Pandas modulunun dataFrame methoduyla sisteme girilen araclarin listelenmesi ve kategorize edilmesini sagladim
+
         df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' \nArac Modeli ', '\n Benzin Turu ', '\n Muayene Tarihi ', '\n Arac yasi ', '\n Motor hacmi ', ])
         print(df.to_string())
  
