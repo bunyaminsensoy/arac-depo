@@ -48,7 +48,8 @@ class Menu:
             print("\n"+plaka+" plakali arac sisteme kaydedildi.", end='\n')
         else:
             print("\n"+plaka+" plakali arac sistemde zaten kayitli!", end='\n')
-   
+    # Girilen plakayi dic'te ariyorum varsa geriye False ve none tupple'i donduruyorum
+    # Yoksa plakanin eklenebilir oldugunu soyluyorum ve geriye dict'i gonderiyorum
    
     def searchRecord(self, plaka):
         for i in self.vehicleList.keys():
