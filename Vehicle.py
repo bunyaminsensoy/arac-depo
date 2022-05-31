@@ -2,7 +2,8 @@ from datetime import date
 from tabnanny import verbose
 
 class Vehicle:
-    
+
+    # Vehicle sinifinin constructor'i kullanicidan alinan plakayi buradaki plaka ozelligine atar.
     def __init__(self, plaka="None"):
         self.__plaka = plaka
 
