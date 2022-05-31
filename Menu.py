@@ -75,6 +75,8 @@ class Menu:
                 print("\nBu plakayla ilgili bir kayit bulunamadi.!\n")
                 print("Menuye donmek icin : -1")
     
+    # Girilen plakanin sistemde kayitli olup olmadigini sorgulayan fonksiyon
+    # Return olarak boolean bir ifade dondurur.
     
     def kayitliMi(self, plaka):
         if plaka in self.vehicleList.keys():
