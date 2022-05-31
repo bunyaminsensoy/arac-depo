@@ -6,7 +6,12 @@ class Vehicle:
     # Vehicle sinifinin constructor'i kullanicidan alinan plakayi buradaki plaka ozelligine atar.
     def __init__(self, plaka="None"):
         self.__plaka = plaka
-
+        
+     #Alttaki 4 method icin ayni prensip gecerli
+        """Kullanicidan arac ozellikleriyle ilgili input aliyoruz 
+        bunlari basta ve sondaki bosluk karakterlerinden kurtariyoruz. Ve hepsini buyuk harf olarak degistriyoruz
+        Eger istenen formatta girilmezse sonsuz bir donguye sokuyoruz istenen format girilene kadar.   
+        """
         self.__aracModeli = input("Aracinizin modelini giriniz: ").strip().upper()
         while not(self.aracModeli.isalpha()):
             print("Arac modeli sadece alfabeden olusabilir!!")
