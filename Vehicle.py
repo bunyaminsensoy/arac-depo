@@ -34,7 +34,7 @@ class Vehicle:
             self.__motorHacmi = input("Motor hacmini giriniz: ").strip().upper()
 
         
-        self.__vergiUcreti = int(self.__aracYasi) * (int(self.__motorHacmi)*0.1)              
+        self.__vergiUcreti = int(self.__aracYasi) * int(self.__motorHacmi)              
 
         #Kullanicidan Yil-Ay-Gun seklinde bir input aliyoruz (1 bosluk birakarak) 
         #Eger istenen formatta girilmezse sonsuz bir donguye sokuyoruz dogru bir format girildiginde;
@@ -72,7 +72,7 @@ class Vehicle:
     
        #Pythonun default methodlarindan olan str methodunu obje olusturdugumda aracin bilgilerini ekrana yazabilmek ve anlik
     #bilgi alabilmek icin kullandim
-    
+
     def __str__(self):
         print()
         suankiTarih = date.today()

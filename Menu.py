@@ -9,7 +9,7 @@ class Menu:
 
     def menu(self):
         cycle = True
-        print("Kayit eklemek icin :1\n""Tüm kayıtları görmek için :2\n"
+        print("Kayit eklemek icin :1\n""Tüm kayıtları görmek icin :2\n"
               "Arac bilgilerini gormek icin :3\n" "Programi sonlandirmak icin :4\n")
 
         while( cycle ):      # Degisken kontrollu bir dongu yaptim. Cikmak istedigim zaman bu degiskeni false yapip donguyu sonlandiriyorum
