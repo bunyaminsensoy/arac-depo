@@ -12,6 +12,7 @@ class Vehicle:
         bunlari basta ve sondaki bosluk karakterlerinden kurtariyoruz. Ve hepsini buyuk harf olarak degistriyoruz
         Eger istenen formatta girilmezse sonsuz bir donguye sokuyoruz istenen format girilene kadar.   
         """
+        
         self.__aracModeli = input("Aracinizin modelini giriniz: ").strip().upper()
         while not(self.aracModeli.isalpha()):
             print("Arac modeli sadece alfabeden olusabilir!!")
