@@ -94,3 +94,11 @@ class Vehicle:
     @aracYasi.setter
     def aracYasi(self, value):
         self.__aracYasi = value
+    
+    @property
+    def motorHacmi(self):
+        return self.__motorHacmi
+
+    @motorHacmi.setter
+    def motorHacmi(self, value):
+        self.__motorHacmi = value
