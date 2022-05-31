@@ -6,17 +6,17 @@ class Vehicle:
         self.__aracModeli = input("Aracinizin modelini giriniz: ").strip()
         while not(self.aracModeli.isalpha()):
             print("Arac modeli sadece alfabeden olusabilir!!")
-            self.aracModeli = input("Aracinizin modelini giriniz: ").strip()
+            self.__aracModeli = input("Aracinizin modelini giriniz: ").strip()
 
         self.__fuelType = input("Benzin tipini giriniz: ").strip()
         while not (self.fuelType.isalpha()):
             print("Benzin tipi sadece alfabeden olusabilir!!")
-            self.fuelType = input("Benzin tipini giriniz: ").strip()
+            self.__fuelType = input("Benzin tipini giriniz: ").strip()
 
         self.__muayeneTarihi = input("Muayene tarihini giriniz : ").strip()
         while not (self.muayeneTarihi.isnumeric()):
             print("Muayene tarihi sayilardan olusmalidir!")
-            self.muayeneTarihi = input("Muayene tarihi giriniz: ").strip()
+            self.__muayeneTarihi = input("Muayene tarihi giriniz: ").strip()
 
 
     def _str_(self):
