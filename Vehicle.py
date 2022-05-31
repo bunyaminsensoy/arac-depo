@@ -28,3 +28,10 @@ class Vehicle:
 
         
         self.__vergiUcreti = int(self.__aracYasi) * int(self.__motorHacmi)              
+
+        self.tarih = input("Muayene tarihini Yil-Ay-Gun seklinde 1 bosluk birakarak giriniz : ").strip()
+        while (len(self.tarih) != 10) or (self.whiteSpaceCount(self.tarih) != 2):
+            print("Lutfen istenen formatta giris yapiniz!")
+            self.tarih = input("Muayene tarihi giriniz: ").strip()
+        yil, ay, gun = self.tarih.split()
+        self.muayeneTarihi = date(int(yil), int(ay), int(gun))
