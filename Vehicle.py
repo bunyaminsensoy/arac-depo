@@ -34,7 +34,7 @@ class Vehicle:
             self.__motorHacmi = input("Motor hacmini giriniz: ").strip().upper()
 
         
-        self.__vergiUcreti = int(self.__aracYasi) * int(self.__motorHacmi)              
+        self.__vergiUcreti = int(self.__aracYasi) * (int(self.__motorHacmi)*0.1)              
 
         #Kullanicidan Yil-Ay-Gun seklinde bir input aliyoruz (1 bosluk birakarak) 
         #Eger istenen formatta girilmezse sonsuz bir donguye sokuyoruz dogru bir format girildiginde;
