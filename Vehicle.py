@@ -102,3 +102,12 @@ class Vehicle:
     @motorHacmi.setter
     def motorHacmi(self, value):
         self.__motorHacmi = value
+
+    @property
+    def vergiUcreti(self):
+        return self.__vergiUcreti
+
+    @vergiUcreti.setter
+    def vergiUcreti(self, value):
+        self.__vergiUcreti = value
+
