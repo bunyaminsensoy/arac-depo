@@ -91,7 +91,7 @@ class Menu:
         self.objectToList()  # Fonksiyon hakkindaki gerekli aciklamalari yaptim
  # Pandas modulunun dataFrame methoduyla sisteme girilen araclarin listelenmesi ve kategorize edilmesini sagladim
 
-        df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' \nArac Modeli ', '\n Benzin Turu ', '\n Muayene Tarihi ', '\n Arac yasi ', '\n Motor hacmi ', ])
+        df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' Arac Modeli ', ' Benzin Turu ', ' Muayene Tarihi ', ' Arac yasi ', ' Motor hacmi ', ])
         print(df.to_string())
  
  # Basta dictinory'de tuttugum kayitlari Vehicle'da halihazirda yazilmis olan returnPropertiesList() methoduyla  
