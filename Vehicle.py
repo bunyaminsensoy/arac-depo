@@ -48,14 +48,17 @@ class Vehicle:
         self.muayeneTarihi = date(int(yil), int(ay), int(gun))
       
     # Constructorda tarih inputu alirken inputtaki bosluk karakterlerinin sayisini hesaplayan fonksiyon
-    
+
     def whiteSpaceCount(self, string):
         count = 0
         for a in string:
             if a.isspace():
                 count += 1
         return count
-
+    
+    """ Arac bilgilerini bir listeye atiyoruz. Ana menude tum arac girdilerini dataFrame fonksiyonu ile yazdirabilmek
+    icin bize double list gerekiyordu .Bu yuzden aractaki verileri bir listeye atayip bu listeyide return ettirdim"""
+    
     def returnPropertiesList(self):
         returnList = []
         returnList.append(self.plaka)
