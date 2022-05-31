@@ -79,3 +79,11 @@ class Vehicle:
     def fuelType(self, value):
         self.__fuelType = value
 
+    @property
+    def aracModeli(self):
+        return self.__aracModeli
+
+    @aracModeli.setter
+    def aracModeli(self, value):
+        return self.__aracModeli
+
