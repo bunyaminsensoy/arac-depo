@@ -20,3 +20,11 @@ class Vehicle:
         while not (self.aracYasi.isnumeric()):
             print("Arac yasi sadece sayılardan olusabilir!!")
             self.__aracYasi = input("Arac yasini giriniz: ").strip().upper()
+
+        self.__motorHacmi = input("Motor hacmini giriniz: ").strip().upper()
+        while not (self.motorHacmi.isnumeric()):
+            print("Motor hacmi sadece sayılardan olusabilir!!")
+            self.__motorHacmi = input("Motor hacmini giriniz: ").strip().upper()
+
+        
+        self.__vergiUcreti = int(self.__aracYasi) * int(self.__motorHacmi)              
