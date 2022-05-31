@@ -35,3 +35,10 @@ class Vehicle:
             self.tarih = input("Muayene tarihi giriniz: ").strip()
         yil, ay, gun = self.tarih.split()
         self.muayeneTarihi = date(int(yil), int(ay), int(gun))
+
+    def whiteSpaceCount(self, string):
+        count = 0
+        for a in string:
+            if a.isspace():
+                count += 1
+        return count
