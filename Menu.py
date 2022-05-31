@@ -83,6 +83,7 @@ class Menu:
             return False
         return True
 
+# Girilen tum kayitlari pandas kutuphanesiyle ekrana yazdiriyorum
     def readRecords(self):
         print()
         self.objectToList()
