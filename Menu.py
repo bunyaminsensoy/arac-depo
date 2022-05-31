@@ -30,6 +30,13 @@ class Menu:
                 cycle = False
             print()
 
+         # Kayit ekleme fonksiyonu 
+    """ Kullanicidan arac plakasi alan bunu sistemde kayitli degilse sisteme ekleyen 
+        ayrica eklenip eklenmedigini ekrana yazdiran bir fonksiyon yazdim. Bunu yazarken bosluk duyarlikli
+        ve girilen inputu upperCase formuna ceviren static methodlarida kullandim.
+        Dictinory'e ekledigim deger {plaka:arac nesnesi } seklinde oldugunu belirtmek isterim. 
+    """
+
     def addRecord(self):
         plaka = input("Aracin plakasini giriniz: ").strip().upper()
         while not (plaka.isalnum()):
