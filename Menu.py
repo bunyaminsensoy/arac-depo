@@ -69,3 +69,7 @@ class Menu:
         if plaka in self.vehicleList.keys():
             return False
         return True
+
+    def readRecords(self):
+        print()
+        self.objectToList()
