@@ -52,3 +52,11 @@ class Vehicle:
         returnList.append(self.aracYasi)
         returnList.append(self.motorHacmi)
         return returnList
+
+    def __str__(self):
+        print()
+        suankiTarih = date.today()
+        return "Arac plakasi : "+self.plaka +"\nArac modeli : "+self.aracModeli + "\nBenzin tipi : "+self.fuelType \
+        + "\nArac yasi : "+self.aracYasi + "\nMotor hacmi : "+self.motorHacmi + "\nVergi ucreti : "+str(self.vergiUcreti) \
+              + "\nMuayene tarihi : " +str(self.muayeneTarihi) +"\nMuayene gunune : " + str(self.muayeneTarihi-suankiTarih) + " var"
+
