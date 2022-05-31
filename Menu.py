@@ -50,7 +50,7 @@ class Menu:
         return False, None
     
     
-     def getVehicle(self):
+    def getVehicle(self):
         cycleControl = True
         while cycleControl:
             plaka = input("Aracinizin plakasini giriniz: ").strip().upper()
