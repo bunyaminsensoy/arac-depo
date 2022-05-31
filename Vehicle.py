@@ -87,3 +87,10 @@ class Vehicle:
     def aracModeli(self, value):
         return self.__aracModeli
 
+    @property
+    def aracYasi(self):
+        return self.__aracYasi
+
+    @aracYasi.setter
+    def aracYasi(self, value):
+        self.__aracYasi = value
