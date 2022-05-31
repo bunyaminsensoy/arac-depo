@@ -70,3 +70,12 @@ class Vehicle:
     @plaka.setter
     def plaka(self, value):
         self.__plaka = value
+
+    @property
+    def fuelType(self):
+        return self.__fuelType
+
+    @fuelType.setter
+    def fuelType(self, value):
+        self.__fuelType = value
+
