@@ -39,7 +39,7 @@ class Vehicle:
         #Eger istenen formatta girilmezse sonsuz bir donguye sokuyoruz dogru bir format girildiginde;
         # String methodlarından olan strip methoduyla yil ay gun degiskenlerine bu degerleri atıyoruz
         # Pythonun date modulunu kullanarak muayene tarihine bunu atiyoruz.
-        
+
         self.tarih = input("Muayene tarihini Yil-Ay-Gun seklinde 1 bosluk birakarak giriniz : ").strip()
         while (len(self.tarih) != 10) or (self.whiteSpaceCount(self.tarih) != 2):
             print("Lutfen istenen formatta giris yapiniz!")
@@ -75,6 +75,8 @@ class Vehicle:
 
    
    #-------------------------------------- GETTER SETTER Methods----------------------------------------------#
+
+        #private degiskenleri diger siniflarda kullanabilmek icin getter - setter metodlarini yazdim.
 
     @property
     def plaka(self):
