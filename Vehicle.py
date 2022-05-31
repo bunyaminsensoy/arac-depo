@@ -10,3 +10,8 @@ class Vehicle:
         while not(self.aracModeli.isalpha()):
             print("Arac modeli sadece alfabeden olusabilir!!")
             self.__aracModeli = input("Aracinizin modelini giriniz: ").strip().upper()
+                 
+        self.__fuelType = input("Benzin tipini giriniz: ").strip().upper()
+        while not (self.fuelType.isalpha()):
+            print("Benzin tipi sadece alfabeden olusabilir!!")
+            self.__fuelType = input("Benzin tipini giriniz: ").strip().upper()
