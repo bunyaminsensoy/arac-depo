@@ -90,7 +90,10 @@ class Menu:
  # Pandas modulunun dataFrame methoduyla sisteme girilen araclarin listelenmesi ve kategorize edilmesini sagladim
         df = pd.DataFrame(self.printRecord, columns=[' Plaka ', ' \nArac Modeli ', '\n Benzin Turu ', '\n Muayene Tarihi ', '\n Arac yasi ', '\n Motor hacmi ', ])
         print(df.to_string())
-
+ 
+ # Basta dictinory'de tuttugum kayitlari Vehicle'da halihazirda yazilmis olan returnPropertiesList() methoduyla  
+ # obje hakkindaki verileri burada printRecordList degiskenine ekliyorum (Yani double list yapiyorum dataFrame kullanabilmek icin)
+   
     def objectToList(self):
         for i in self.vehicleList.keys():
             temp = self.vehicleList.get(i)
